@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  uam:
+    image: debian:bullseye-slim
+    container_name: uam
+    restart: unless-stopped
+    stop_grace_period: 20s
+    network_mode: host
+    ulimits:
+      rtprio: 95
+      memlock: -1
+    volumes:
+      - "./entrypoint.sh:/opt/entrypoint.sh"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
+    environment:
+      - PBKEY=
