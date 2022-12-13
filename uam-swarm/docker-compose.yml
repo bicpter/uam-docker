@@ -1,0 +1,59 @@
+version: '3.3'
+
+services:
+  uam_1:
+    image: debian:bullseye-slim
+    container_name: uam_1
+    hostname: uam_1
+    restart: unless-stopped
+    stop_grace_period: 5s
+    ulimits:
+      rtprio: 95
+      memlock: -1
+    volumes:
+      - "./entrypoint.sh:/opt/entrypoint.sh"
+      - "/opt/uam_data/uam_1:/root/.uam"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
+    ports:
+      - "127.0.0.1:17100:17099"
+      - "4160:4160"
+    environment:
+      - PBKEY=
+
+  uam_2:
+    image: debian:bullseye-slim
+    container_name: uam_2
+    hostname: uam_2
+    restart: unless-stopped
+    stop_grace_period: 5s
+    ulimits:
+      rtprio: 95
+      memlock: -1
+    volumes:
+      - "./entrypoint.sh:/opt/entrypoint.sh"
+      - "/opt/uam_data/uam_2:/root/.uam"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
+    ports:
+      - "127.0.0.1:17101:17099"
+      - "4161:4160"
+    environment:
+      - PBKEY=
+
+  uam_3:
+    image: debian:bullseye-slim
+    container_name: uam_3
+    hostname: uam_3
+    restart: unless-stopped
+    stop_grace_period: 5s
+    ulimits:
+      rtprio: 95
+      memlock: -1
+    volumes:
+      - "./entrypoint.sh:/opt/entrypoint.sh"
+      - "/opt/uam_data/uam_3:/root/.uam"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
+    ports:
+      - "127.0.0.1:17102:17099"
+      - "4162:4160"
+    environment:
+      - PBKEY=
