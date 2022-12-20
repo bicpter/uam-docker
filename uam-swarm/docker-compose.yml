@@ -13,12 +13,13 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_1:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
     ports:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
     environment:
       - PBKEY=
+      - PPORT=4160
 
   uam_2:
     image: debian:bullseye-slim
@@ -32,12 +33,13 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_2:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
     ports:
       - "127.0.0.1:17101:17099"
-      - "4161:4160"
+      - "4161:4161"
     environment:
       - PBKEY=
+      - PPORT=4161
 
   uam_3:
     image: debian:bullseye-slim
@@ -51,9 +53,10 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_3:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
     ports:
       - "127.0.0.1:17102:17099"
-      - "4162:4160"
+      - "4162:4162"
     environment:
       - PBKEY=
+      - PPORT=4162
