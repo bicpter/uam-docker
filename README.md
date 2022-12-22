@@ -21,5 +21,6 @@
 ```docker-compose up -d```
 
 ## Information
-This container will download the latest version of uam every time it is started and will install apt packages so keep that in mind.
-The http service for uam is enabled and listening on http://127.0.0.1:17099 for the single instance. For the UAM swarm you need to define the listening port for each instance.
+1. This container will download the latest version of uam every time it is started and will install apt packages so keep that in mind.
+2. The http service for uam is enabled and listening on http://127.0.0.1:17099 for the single instance. For the UAM swarm you need to define the listening port for each instance.
+3. Make sure you port forward manually as upnp will most likely not work.
