@@ -1,4 +1,4 @@
-version: '3.3'
+version: '2.4'
 
 services:
   uam_1:
@@ -10,6 +10,8 @@ services:
     ulimits:
       rtprio: 95
       memlock: -1
+    oom_score_adj: -700
+    mem_swappiness: 10
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_1:/root/.uam"
@@ -30,6 +32,8 @@ services:
     ulimits:
       rtprio: 95
       memlock: -1
+    oom_score_adj: -700
+    mem_swappiness: 10
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_2:/root/.uam"
@@ -50,6 +54,8 @@ services:
     ulimits:
       rtprio: 95
       memlock: -1
+    oom_score_adj: -700
+    mem_swappiness: 10
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_3:/root/.uam"
