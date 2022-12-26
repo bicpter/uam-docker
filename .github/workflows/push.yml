@@ -1,0 +1,14 @@
+name: run-docker-compose-workflow
+on: repository_dispatch #change to push when it's all working
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the stack
+        run: cd uam && docker-compose up -d
+      - name: Sleep until uam is running
+        run: sleep 100s
+        shell: bash
+      - name: Test if port is open
+        run: nc -z -w30 127.0.0.1 4156
