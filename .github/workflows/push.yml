@@ -1,5 +1,6 @@
 name: run-docker-compose-workflow
-on: repository_dispatch #change to push when it's all working
+on: #change to push when it's all working
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest
