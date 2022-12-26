@@ -1,4 +1,5 @@
 # Run UAM in a Docker container
+[![run-docker-compose-workflow](https://github.com/Tha14/uam-docker/actions/workflows/push.yml/badge.svg)](https://github.com/Tha14/uam-docker/actions/workflows/push.yml)
 
 ## How to use:
 ### Single UAM instance
