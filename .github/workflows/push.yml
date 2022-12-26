@@ -1,8 +1,7 @@
 name: run-docker-compose-workflow
-on: #change to push when it's all working
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 jobs:
-  test:
+  single-instance-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,5 +10,7 @@ jobs:
       - name: Sleep until uam is running
         run: sleep 100s
         shell: bash
-      - name: Test if port is open
+      - name: Test if uam mining port is open
         run: nc -z -w30 127.0.0.1 4156
+      - name: Test if uam http statistics port is open
+        run: nc -z -w30 127.0.0.1 17099
