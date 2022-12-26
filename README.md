@@ -24,3 +24,11 @@
 1. This container will download the latest version of uam every time it is started and will install apt packages so keep that in mind.
 2. The http service for uam is enabled and listening on http://127.0.0.1:17099 for the single instance. For the UAM swarm you need to define the listening port for each instance.
 3. Make sure you port forward manually as upnp will most likely not work.
+
+## ToDo:
+- [ ] Add CI building to make sure the scripts work.
+- [ ] Remove unnecessary packages.
+- [ ] Try to speed up mime database update.
+- [ ] Include wondershaper install and environment configuration for it.
+- [ ] See if it's possible to automatically increment port numbers for the swarm script.
+- [ ] Try to package up-to-date databases to prevent warm-up problems.
