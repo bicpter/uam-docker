@@ -27,9 +27,9 @@
 3. Make sure you port forward manually as upnp will most likely not work.
 
 ## ToDo:
-- [ ] Add CI building to make sure the scripts work.
+- [x] Add CI tests to make sure the scripts work.
 - [ ] Remove unnecessary packages.
 - [ ] Try to speed up mime database update.
-- [ ] Include wondershaper install and environment configuration for it.
+- [ ] Include wondershaper in `apt install` and environment configuration parameters for it.
 - [ ] See if it's possible to automatically increment port numbers for the swarm script.
 - [ ] Try to package up-to-date databases to prevent warm-up problems.
