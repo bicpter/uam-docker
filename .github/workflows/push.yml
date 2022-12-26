@@ -14,3 +14,24 @@ jobs:
         run: nc -z -w30 127.0.0.1 4156
       - name: Test if uam http statistics port is open
         run: nc -z -w30 127.0.0.1 17099
+  swarm-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the stack
+        run: cd uam-swarm && PBKEY=${{ secrets.PBKEY }} docker-compose up -d
+      - name: Sleep until uam is running
+        run: sleep 280s
+        shell: bash
+      - name: Test if uam_1 mining port is open
+        run: nc -z -w30 127.0.0.1 4160
+      - name: Test if uam_1 http statistics port is open
+        run: nc -z -w30 127.0.0.1 17100
+      - name: Test if uam_2 mining port is open
+        run: nc -z -w30 127.0.0.1 4161
+      - name: Test if uam_2 http statistics port is open
+        run: nc -z -w30 127.0.0.1 17101
+      - name: Test if uam_3 mining port is open
+        run: nc -z -w30 127.0.0.1 4162
+      - name: Test if uam_3 http statistics port is open
+        run: nc -z -w30 127.0.0.1 17102
