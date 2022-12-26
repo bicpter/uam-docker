@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run: cd uam && docker-compose up -d
+        run: cd uam && PBKEY=${{ secrets.PBKEY }} docker-compose up -d
       - name: Sleep until uam is running
         run: sleep 100s
         shell: bash
