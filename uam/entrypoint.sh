@@ -1,7 +1,8 @@
 #!/bin/sh
 cd /tmp
-apt update && apt -yq install wget libglib2.0-0 ca-certificates dnsmasq
+apt update && apt -yq install wget libglib2.0-0 ca-certificates dnsmasq wondershaper
 update-ca-certificates
+wondershaper eth0 $2 $3 &
 wget https://update.u.is/downloads/uam/linux/uam-latest_amd64.deb
 dpkg -i uam-latest_amd64.deb
 cd /opt/uam/

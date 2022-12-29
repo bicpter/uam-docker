@@ -15,13 +15,15 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_1:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4160
+      - NETLIMUP=10000
+      - NETLIMDOWN=18000
 
   uam_2:
     image: debian:bullseye-slim
@@ -37,13 +39,15 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_2:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4161
+      - NETLIMUP=10000
+      - NETLIMDOWN=18000
 
   uam_3:
     image: debian:bullseye-slim
@@ -59,10 +63,12 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_3:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17102:17099"
       - "4162:4162"
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4162
+      - NETLIMUP=10000
+      - NETLIMDOWN=18000
