@@ -30,8 +30,5 @@
 ## ToDo:
 - [x] Add CI tests to make sure the scripts work.
 - [x] Make PBKEY a required variable to avoid running uam without it.
-- [ ] Remove unnecessary packages.
-- [ ] Try to speed up mime database update.
 - [x] Include wondershaper or sch_cake in `apt install` and environment configuration parameters for it.
 - [ ] See if it's possible to automatically increment port numbers for the swarm script.
-- [ ] Try to package up-to-date databases to prevent warm-up problems.
