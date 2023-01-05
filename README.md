@@ -5,19 +5,17 @@
 ### Single UAM instance
 1. Make sure you have docker and docker-compose installed on your host.
 2. Clone this repository.
-3. Add your Public Key by editing the docker-compose.yml file. Add it to the variable named `PBKEY` without spaces.
-4. If you're on windows or macos, make sure you change the volume path `/opt/uam_data` to something that works on your OS.
-5. Execute the following command in terminal while being in the `uam` directory of this repository:
+3. If you're on windows or macos, make sure you change the volume path `/opt/uam_data` to something that works on your OS.
+4. Execute the following command in terminal while being in the `uam` directory of this repository:
 
 ```PBKEY={YOURKEYHERE} docker-compose up -d```
 
 ### UAM Swarm
 1. Make sure you have docker and docker-compose installed on your host.
 2. Clone this repository.
-3. Add your Public Key by editing the docker-compose.yml file. Add it to the variable named `PBKEY` without spaces for each service.
-4. If you're on windows or macos, make sure you change the volume path `/opt/uam_data/uam_` to something that works on your OS.
-5. Optionally, add or remove services according to your needs. You can copy and paste the existing services and modify the names, paths, and ports for each of them.
-6. Execute the following command in terminal while being in the `uam-swarm` directory of this repository:
+3. If you're on windows or macos, make sure you change the volume path `/opt/uam_data/uam_` to something that works on your OS.
+4. Optionally, add or remove services according to your needs. You can copy and paste the existing services and modify the names, paths, and ports for each of them.
+5. Execute the following command in terminal while being in the `uam-swarm` directory of this repository:
 
 ```PBKEY={YOURKEYHERE} docker-compose up -d```
 
