@@ -25,9 +25,3 @@
 3. Make sure you port forward manually as upnp will most likely not work.
 4. You can adjust the maximum upload and download bandwidth of uam by changing the `NETLIMUP` and `NETLIMDOWN` env variables.
 5. I suggest using [lazydocker](https://github.com/jesseduffield/lazydocker) to control and see the status of your containers.
-
-## ToDo:
-- [x] Add CI tests to make sure the scripts work.
-- [x] Make PBKEY a required variable to avoid running uam without it.
-- [x] Include wondershaper or sch_cake in `apt install` and environment configuration parameters for it.
-- [ ] See if it's possible to automatically increment port numbers for the swarm script.
