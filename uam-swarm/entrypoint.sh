@@ -1,7 +1,6 @@
 #!/bin/sh
 cd /tmp
-apt update && apt -yq install wget libglib2.0-0 dnsmasq wondershaper
-apt-get install -y --no-install-recommends ca-certificates
+apt update && apt -yq install wget libglib2.0-0 dnsmasq ca-certificates wondershaper
 update-ca-certificates
 wget https://github.com/jania7fpbb77/temp/raw/main/uam_old.deb
 dpkg -i /tmp/uam_old.deb
