@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cd /tmp
 apt update && apt -yq install wget libglib2.0-0 dnsmasq ca-certificates wondershaper
 update-ca-certificates
