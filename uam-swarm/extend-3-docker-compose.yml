@@ -52,7 +52,7 @@ services:
       - PPORT=4261
       - NETLIMUP=10000
       - NETLIMDOWN=18000
- 
+  
   uam_extend_3:
     image: debian:bullseye-slim
     container_name: uam_extend_3
