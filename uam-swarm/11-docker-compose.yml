@@ -21,10 +21,7 @@ services:
     ports:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4160
@@ -51,10 +48,7 @@ services:
     ports:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4161
@@ -81,10 +75,7 @@ services:
     ports:
       - "127.0.0.1:17102:17099"
       - "4162:4162"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4162
@@ -111,10 +102,7 @@ services:
     ports:
       - "127.0.0.1:17103:17099"
       - "4163:4163"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4163
@@ -141,10 +129,7 @@ services:
     ports:
       - "127.0.0.1:17104:17099"
       - "4164:4164"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4164
@@ -171,10 +156,7 @@ services:
     ports:
       - "127.0.0.1:17105:17099"
       - "4165:4165"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4165
@@ -201,10 +183,7 @@ services:
     ports:
       - "127.0.0.1:17106:17099"
       - "4166:4166"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4166
@@ -231,10 +210,7 @@ services:
     ports:
       - "127.0.0.1:17107:17099"
       - "4167:4167"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4167
@@ -261,10 +237,7 @@ services:
     ports:
       - "127.0.0.1:17108:17099"
       - "4168:4168"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4168
@@ -290,10 +263,7 @@ services:
     ports:
       - "127.0.0.1:17109:17099"
       - "4169:4169"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4169
@@ -320,10 +290,7 @@ services:
     ports:
       - "127.0.0.1:17110:17099"
       - "4170:4170"
-    deploy:
-      resources:
-        limits:
-          memory: 6000M
+    mem_limit: 6000m
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4170
