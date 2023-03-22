@@ -21,6 +21,10 @@ services:
     ports:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
+    deploy:
+      resources:
+        limits:
+          memory: 6000M
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4160
