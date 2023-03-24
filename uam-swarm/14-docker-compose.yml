@@ -22,6 +22,7 @@ services:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4160
@@ -49,6 +50,7 @@ services:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4161
@@ -76,6 +78,7 @@ services:
       - "127.0.0.1:17102:17099"
       - "4162:4162"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4162
@@ -103,6 +106,7 @@ services:
       - "127.0.0.1:17103:17099"
       - "4163:4163"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4163
@@ -130,6 +134,7 @@ services:
       - "127.0.0.1:17104:17099"
       - "4164:4164"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4164
@@ -157,6 +162,7 @@ services:
       - "127.0.0.1:17105:17099"
       - "4165:4165"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4165
@@ -184,6 +190,7 @@ services:
       - "127.0.0.1:17106:17099"
       - "4166:4166"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4166
@@ -211,6 +218,7 @@ services:
       - "127.0.0.1:17107:17099"
       - "4167:4167"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4167
@@ -238,6 +246,7 @@ services:
       - "127.0.0.1:17108:17099"
       - "4168:4168"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4168
@@ -264,6 +273,7 @@ services:
       - "127.0.0.1:17109:17099"
       - "4169:4169"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4169
@@ -291,6 +301,7 @@ services:
       - "127.0.0.1:17110:17099"
       - "4170:4170"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4170
@@ -317,6 +328,7 @@ services:
       - "127.0.0.1:17111:17099"
       - "4171:4171"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4171
@@ -343,6 +355,7 @@ services:
       - "127.0.0.1:17112:17100"
       - "4172:4172"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4172
@@ -369,6 +382,7 @@ services:
       - "127.0.0.1:17113:17101"
       - "4173:4173"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4173
