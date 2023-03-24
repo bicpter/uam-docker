@@ -22,6 +22,7 @@ services:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4160
@@ -49,6 +50,7 @@ services:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
     mem_limit: 6000m
+    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4161
