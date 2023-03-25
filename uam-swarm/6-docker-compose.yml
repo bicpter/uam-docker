@@ -21,8 +21,6 @@ services:
     ports:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
-    mem_limit: 5000m
-    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4160
@@ -49,8 +47,6 @@ services:
     ports:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
-    mem_limit: 5000m
-    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4161
@@ -77,8 +73,6 @@ services:
     ports:
       - "127.0.0.1:17102:17099"
       - "4162:4162"
-    mem_limit: 5000m
-    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4162
@@ -105,8 +99,6 @@ services:
     ports:
       - "127.0.0.1:17103:17099"
       - "4163:4163"
-    mem_limit: 5000m
-    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4163
@@ -133,8 +125,6 @@ services:
     ports:
       - "127.0.0.1:17104:17099"
       - "4164:4164"
-    mem_limit: 5000m
-    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4164
@@ -161,8 +151,6 @@ services:
     ports:
       - "127.0.0.1:17105:17099"
       - "4165:4165"
-    mem_limit: 5000m
-    oom_kill_disable: true
     environment:
       - PBKEY=${PBKEY?err}
       - PPORT=4165
