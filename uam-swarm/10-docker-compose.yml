@@ -5,7 +5,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_1
     hostname: uam_1
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -31,7 +31,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_2
     hostname: uam_2
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -57,7 +57,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_3
     hostname: uam_3
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -83,7 +83,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_4
     hostname: uam_4
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -109,7 +109,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_5
     hostname: uam_5
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -135,7 +135,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_6
     hostname: uam_6
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -161,7 +161,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_7
     hostname: uam_7
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -187,7 +187,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_8
     hostname: uam_8
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -213,7 +213,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_9
     hostname: uam_9
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
@@ -238,7 +238,7 @@ services:
     image: debian:bullseye-slim
     container_name: uam_10
     hostname: uam_10
-    restart: unless-stopped
+    restart: always
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
