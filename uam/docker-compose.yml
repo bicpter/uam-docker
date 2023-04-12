@@ -7,6 +7,9 @@ services:
     hostname: uam
     restart: always
     stop_grace_period: 5s
+    mem_limit: 4500m
+    mem_reservation: 3000m
+    oom_kill_disable: true
     cap_add:
       - NET_ADMIN
     ulimits:
