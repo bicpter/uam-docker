@@ -1,4 +1,4 @@
-version: '2.4'
+version: '2.2'
 
 services:
   uam:
@@ -25,7 +25,7 @@ services:
       - "127.0.0.1:18100:17099"
       - "4260:4260"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4260
       - NETLIMUP=10000
       - NETLIMDOWN=18000
