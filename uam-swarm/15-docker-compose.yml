@@ -1,4 +1,4 @@
-version: '2.4'
+version: '2.2'
 
 services:
   uam_1:
@@ -22,7 +22,7 @@ services:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4160
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -48,7 +48,7 @@ services:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4161
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -74,7 +74,7 @@ services:
       - "127.0.0.1:17102:17099"
       - "4162:4162"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4162
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -100,7 +100,7 @@ services:
       - "127.0.0.1:17103:17099"
       - "4163:4163"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4163
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -126,7 +126,7 @@ services:
       - "127.0.0.1:17104:17099"
       - "4164:4164"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4164
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -152,7 +152,7 @@ services:
       - "127.0.0.1:17105:17099"
       - "4165:4165"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4165
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -178,7 +178,7 @@ services:
       - "127.0.0.1:17106:17099"
       - "4166:4166"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4166
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -204,7 +204,7 @@ services:
       - "127.0.0.1:17107:17099"
       - "4167:4167"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4167
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -230,7 +230,7 @@ services:
       - "127.0.0.1:17108:17099"
       - "4168:4168"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4168
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -255,7 +255,7 @@ services:
       - "127.0.0.1:17109:17099"
       - "4169:4169"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4169
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -281,7 +281,7 @@ services:
       - "127.0.0.1:17110:17099"
       - "4170:4170"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4170
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -306,7 +306,7 @@ services:
       - "127.0.0.1:17111:17099"
       - "4171:4171"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4171
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -331,7 +331,7 @@ services:
       - "127.0.0.1:17112:17100"
       - "4172:4172"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4172
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -356,7 +356,7 @@ services:
       - "127.0.0.1:17113:17101"
       - "4173:4173"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4173
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -381,7 +381,7 @@ services:
       - "127.0.0.1:17114:17101"
       - "4174:4174"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4174
       - NETLIMUP=10000
       - NETLIMDOWN=18000
