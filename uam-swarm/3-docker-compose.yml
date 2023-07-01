@@ -1,4 +1,4 @@
-version: '2.4'
+version: '2.2'
 
 services:
   uam_1:
@@ -22,7 +22,7 @@ services:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4160
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -48,7 +48,7 @@ services:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4161
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -74,7 +74,7 @@ services:
       - "127.0.0.1:17102:17099"
       - "4162:4162"
     environment:
-      - PBKEY=${PBKEY?err}
+      - PBKEY=${PBKEY}
       - PPORT=4162
       - NETLIMUP=10000
       - NETLIMDOWN=18000
