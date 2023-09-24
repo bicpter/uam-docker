@@ -685,7 +685,7 @@ services:
       - PPORT=4186
       - NETLIMUP=10000
       - NETLIMDOWN=18000
- uam_28:
+  uam_28:
     image: debian:bullseye-slim
     container_name: uam_28
     hostname: uam_28
