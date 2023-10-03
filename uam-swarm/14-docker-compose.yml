@@ -328,7 +328,7 @@ services:
       - "/opt/uam_data/uam_13:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17112:17100"
+      - "127.0.0.1:17112:17099"
       - "4172:4172"
     environment:
       - PBKEY=${PBKEY}
@@ -353,7 +353,7 @@ services:
       - "/opt/uam_data/uam_14:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17113:17101"
+      - "127.0.0.1:17113:17099"
       - "4173:4173"
     environment:
       - PBKEY=${PBKEY}
