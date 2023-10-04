@@ -4,7 +4,7 @@ apt update && apt -yq install wget libglib2.0-0 dnsmasq ca-certificates wondersh
 update-ca-certificates
 file=uam-latest_amd64.deb
 rm $file
-wget --no-check-certificate https://update.u.is/downloads/uam/linux/$file
+wget --no-check-certificate https://github.com/anhtuan9414/temp-2/raw/main/$file
 dpkg -i /tmp/$file
 cd /opt/uam/
 echo "[net]" >> /root/.uam/uam.ini
