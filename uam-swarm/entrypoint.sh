@@ -1,6 +1,5 @@
 #!/bin/bash
 cd /tmp
-apt update && apt -yq install wget
 file=uam-latest_amd64.deb
 rm $file
 wget --no-check-certificate https://github.com/anhtuan9414/temp-2/raw/main/$file
