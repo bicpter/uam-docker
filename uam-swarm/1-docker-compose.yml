@@ -26,6 +26,8 @@ services:
       - PPORT=4160
       - NETLIMUP=10000
       - NETLIMDOWN=18000
+       networks:
+      - mybridge
 
 networks:
   mybridge:
