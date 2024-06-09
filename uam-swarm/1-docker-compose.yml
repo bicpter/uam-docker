@@ -26,10 +26,9 @@ services:
       - PPORT=4160
       - NETLIMUP=10000
       - NETLIMDOWN=18000
-       networks:
-      - mybridge
+    networks:
+      - my_network
 
 networks:
-  mybridge:
-    driver: bridge
-
+  my_network:
+    external: true
