@@ -1236,7 +1236,6 @@ uam_49:
     - PPORT=4208
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_50:
   image: debian:bullseye-slim
   container_name: uam_50
@@ -1262,7 +1261,6 @@ uam_50:
     - PPORT=4209
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_51:
   image: debian:bullseye-slim
   container_name: uam_51
@@ -1288,7 +1286,6 @@ uam_51:
     - PPORT=4210
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_52:
   image: debian:bullseye-slim
   container_name: uam_52
@@ -1314,7 +1311,6 @@ uam_52:
     - PPORT=4211
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_53:
   image: debian:bullseye-slim
   container_name: uam_53
@@ -1340,7 +1336,6 @@ uam_53:
     - PPORT=4212
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_54:
   image: debian:bullseye-slim
   container_name: uam_54
@@ -1391,7 +1386,6 @@ uam_55:
     - PPORT=4214
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_56:
   image: debian:bullseye-slim
   container_name: uam_56
@@ -1417,7 +1411,6 @@ uam_56:
     - PPORT=4215
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_57:
   image: debian:bullseye-slim
   container_name: uam_57
@@ -1443,7 +1436,6 @@ uam_57:
     - PPORT=4216
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_58:
   image: debian:bullseye-slim
   container_name: uam_58
@@ -1469,7 +1461,6 @@ uam_58:
     - PPORT=4217
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_59:
   image: debian:bullseye-slim
   container_name: uam_59
@@ -1495,7 +1486,6 @@ uam_59:
     - PPORT=4218
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_60:
   image: debian:bullseye-slim
   container_name: uam_60
@@ -1521,7 +1511,6 @@ uam_60:
     - PPORT=4219
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_61:
   image: debian:bullseye-slim
   container_name: uam_61
@@ -1547,7 +1536,6 @@ uam_61:
     - PPORT=4220
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_62:
   image: debian:bullseye-slim
   container_name: uam_62
@@ -1573,7 +1561,6 @@ uam_62:
     - PPORT=4221
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_63:
   image: debian:bullseye-slim
   container_name: uam_63
@@ -1599,7 +1586,6 @@ uam_63:
     - PPORT=4222
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_64:
   image: debian:bullseye-slim
   container_name: uam_64
@@ -1625,7 +1611,6 @@ uam_64:
     - PPORT=4223
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_65:
   image: debian:bullseye-slim
   container_name: uam_65
@@ -1651,7 +1636,6 @@ uam_65:
     - PPORT=4224
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_66:
   image: debian:bullseye-slim
   container_name: uam_66
@@ -1677,7 +1661,6 @@ uam_66:
     - PPORT=4225
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_67:
   image: debian:bullseye-slim
   container_name: uam_67
@@ -1703,7 +1686,6 @@ uam_67:
     - PPORT=4226
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_68:
   image: debian:bullseye-slim
   container_name: uam_68
@@ -1729,7 +1711,6 @@ uam_68:
     - PPORT=4227
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_69:
   image: debian:bullseye-slim
   container_name: uam_69
@@ -1755,7 +1736,6 @@ uam_69:
     - PPORT=4228
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_70:
   image: debian:bullseye-slim
   container_name: uam_70
@@ -1781,7 +1761,6 @@ uam_70:
     - PPORT=4229
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_71:
   image: debian:bullseye-slim
   container_name: uam_71
@@ -1807,7 +1786,6 @@ uam_71:
     - PPORT=4230
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_72:
   image: debian:bullseye-slim
   container_name: uam_72
@@ -1833,7 +1811,6 @@ uam_72:
     - PPORT=4231
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_73:
   image: debian:bullseye-slim
   container_name: uam_73
@@ -1859,7 +1836,6 @@ uam_73:
     - PPORT=4232
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_74:
   image: debian:bullseye-slim
   container_name: uam_74
@@ -1885,7 +1861,6 @@ uam_74:
     - PPORT=4233
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_75:
   image: debian:bullseye-slim
   container_name: uam_75
@@ -1911,7 +1886,6 @@ uam_75:
     - PPORT=4234
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_76:
   image: debian:bullseye-slim
   container_name: uam_76
@@ -1937,7 +1911,6 @@ uam_76:
     - PPORT=4235
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_77:
   image: debian:bullseye-slim
   container_name: uam_77
@@ -1963,7 +1936,6 @@ uam_77:
     - PPORT=4236
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_78:
   image: debian:bullseye-slim
   container_name: uam_78
@@ -1989,7 +1961,6 @@ uam_78:
     - PPORT=4237
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_79:
   image: debian:bullseye-slim
   container_name: uam_79
@@ -2015,7 +1986,6 @@ uam_79:
     - PPORT=4238
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_80:
   image: debian:bullseye-slim
   container_name: uam_80
@@ -2041,7 +2011,6 @@ uam_80:
     - PPORT=4239
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_81:
   image: debian:bullseye-slim
   container_name: uam_81
@@ -2067,7 +2036,6 @@ uam_81:
     - PPORT=4240
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_82:
   image: debian:bullseye-slim
   container_name: uam_82
@@ -2093,7 +2061,6 @@ uam_82:
     - PPORT=4241
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_83:
   image: debian:bullseye-slim
   container_name: uam_83
@@ -2144,7 +2111,6 @@ uam_84:
     - PPORT=4243
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_85:
   image: debian:bullseye-slim
   container_name: uam_85
@@ -2170,7 +2136,6 @@ uam_85:
     - PPORT=4244
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_86:
   image: debian:bullseye-slim
   container_name: uam_86
@@ -2196,7 +2161,6 @@ uam_86:
     - PPORT=4245
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_87:
   image: debian:bullseye-slim
   container_name: uam_87
@@ -2222,7 +2186,6 @@ uam_87:
     - PPORT=4246
     - NETLIMUP=10000
     - NETLIMDOWN=18000
-
 uam_88:
   image: debian:bullseye-slim
   container_name: uam_88
