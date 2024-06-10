@@ -10,8 +10,12 @@ services:
     cap_add:
       - NET_ADMIN
     ulimits:
-      rtprio: 95
-      memlock: -1
+      rtprio: 
+        soft: 95
+        hard: 95
+      memlock:
+        soft: -1
+        hard: -1
     oom_score_adj: -700
     mem_swappiness: 10
     volumes:
