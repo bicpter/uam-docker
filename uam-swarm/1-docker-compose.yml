@@ -26,10 +26,4 @@ services:
       - PPORT=4160
       - NETLIMUP=10000
       - NETLIMDOWN=18000
-      network_mode: "host"
-    #networks:
-      #- my_network
-
-#networks:
- # my_network:
-  #  external: true
+    network_mode: "host"
