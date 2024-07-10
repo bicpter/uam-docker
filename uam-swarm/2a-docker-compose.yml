@@ -22,7 +22,7 @@ services:
      # - "127.0.0.1:17100:17099"
      # - "4160:4160"
     environment:
-      - PBKEY=`${kk}`
+      - PBKEY=`${PBKEY}`
       - PPORT=4160
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -49,7 +49,7 @@ services:
       #- "127.0.0.1:17101:17099"
      # - "4161:4161"
     environment:
-      - PBKEY=`${đ}`
+      - PBKEY=`${PBKEY}`
       - PPORT=4161
       - NETLIMUP=10000
       - NETLIMDOWN=18000
