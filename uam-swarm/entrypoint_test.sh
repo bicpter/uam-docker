@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /tmp
 apt-get -o Acquire::Check-Valid-Until=false update && apt-get -yq install wget libglib2.0-0 dnsmasq ca-certificates wondershaper
-file=uam_old.deb
+file=uam-latest_amd64.deb
 rm $file
 wget --no-check-certificate https://github.com/anhtuan9414/temp-2/raw/main/$file
 dpkg -i /tmp/$file
