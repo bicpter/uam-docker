@@ -9,6 +9,8 @@ services:
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
+      - SYS_ADMIN
+      - DAC_READ_SEARCH
     ulimits:
       rtprio: 95
       memlock: -1
@@ -17,7 +19,7 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_1:/root/.uam"
-    command: /bin/sh -c "mount -t tmpfs -o size=50M tmpfs /root/.uam && chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
+    command: /bin/sh -c "mkdir -p /root/.uam && mount -t tmpfs -o size=50M tmpfs /root/.uam && chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
@@ -35,6 +37,8 @@ services:
     stop_grace_period: 5s
     cap_add:
       - NET_ADMIN
+      - SYS_ADMIN
+      - DAC_READ_SEARCH
     ulimits:
       rtprio: 95
       memlock: -1
@@ -43,7 +47,7 @@ services:
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam_2:/root/.uam"
-    command: /bin/sh -c "mount -t tmpfs -o size=50M tmpfs /root/.uam && chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
+    command: /bin/sh -c "mkdir -p /root/.uam && mount -t tmpfs -o size=50M tmpfs /root/.uam && chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
