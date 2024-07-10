@@ -17,7 +17,7 @@ services:
     volumes:
       - "./entrypoint_test.sh:/opt/entrypoint_test.sh"
       - "/opt/uam_data/uam_1:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint_test.sh && /opt/entrypoint_test.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
+    command: /bin/sh -c "echo 'tmpfs /root/.uam tmpfs size=50M 0 0' >> /etc/fstab && chmod +x /opt/entrypoint_test.sh && /opt/entrypoint_test.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17100:17099"
       - "4160:4160"
@@ -43,7 +43,7 @@ services:
     volumes:
       - "./entrypoint_test.sh:/opt/entrypoint_test.sh"
       - "/opt/uam_data/uam_2:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint_test.sh && /opt/entrypoint_test.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
+    command: /bin/sh -c "echo 'tmpfs /root/.uam tmpfs size=50M 0 0' >> /etc/fstab && chmod +x /opt/entrypoint_test.sh && /opt/entrypoint_test.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17101:17099"
       - "4161:4161"
