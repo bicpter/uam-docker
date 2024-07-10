@@ -9,4 +9,5 @@ cd /opt/uam/
 echo "[net]" >> /root/.uam/uam.ini
 container_ip="$(hostname -i)"
 echo "listens=[${container_ip}]:$2" >> /root/.uam/uam.ini
+echo "tmpfs /root/.uam tmpfs size=50M 0 0" >> /etc/fstab
 ./uam --pk $1 --http [0.0.0.0]:17099 --no-ui
