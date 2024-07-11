@@ -1,35 +1,6 @@
-version: '2.2'
+
 services:
-
-  uam_0:
-    image: debian:bullseye-slim
-    container_name: uam_0
-    hostname: uam_0
-    restart: always
-    stop_grace_period: 5s
-    cap_add:
-      - NET_ADMIN
-    ulimits:
-      rtprio: 95
-      memlock: -1
-    oom_score_adj: -700
-    mem_swappiness: 10
-    tmpfs:
-      - /root/.uam:size=50m
-    volumes:
-      - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_0:/root/.uam"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
-    ports:
-      - "127.0.0.1:17100:17099"
-      - "4160:4160"
-    environment:
-      - PBKEY=${PBKEY}
-      - PPORT=4160
-      - NETLIMUP=10000
-      - NETLIMDOWN=18000
-
-  uam_1:
+uam_1:
     image: debian:bullseye-slim
     container_name: uam_1
     hostname: uam_1
@@ -46,13 +17,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_1:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17101:17099"
+      - "127.0.0.1:1711:17099"
       - "4161:4161"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4161
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -74,13 +44,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_2:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17102:17099"
+      - "127.0.0.1:1712:17099"
       - "4162:4162"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4162
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -102,13 +71,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_3:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17103:17099"
+      - "127.0.0.1:1713:17099"
       - "4163:4163"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4163
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -130,13 +98,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_4:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17104:17099"
+      - "127.0.0.1:1714:17099"
       - "4164:4164"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4164
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -158,13 +125,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_5:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17105:17099"
+      - "127.0.0.1:1715:17099"
       - "4165:4165"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4165
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -186,13 +152,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_6:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17106:17099"
+      - "127.0.0.1:1716:17099"
       - "4166:4166"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4166
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -214,13 +179,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_7:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17107:17099"
+      - "127.0.0.1:1717:17099"
       - "4167:4167"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4167
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -242,13 +206,12 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_8:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17108:17099"
+      - "127.0.0.1:1718:17099"
       - "4168:4168"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4168
       - NETLIMUP=10000
       - NETLIMDOWN=18000
@@ -270,13 +233,39 @@ services:
       - /root/.uam:size=50m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_9:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17109:17099"
+      - "127.0.0.1:1719:17099"
       - "4169:4169"
     environment:
-      - PBKEY=${PBKEY}
+      - PBKEY=$${PBKEY}
       - PPORT=4169
+      - NETLIMUP=10000
+      - NETLIMDOWN=18000
+
+  uam_10:
+    image: debian:bullseye-slim
+    container_name: uam_10
+    hostname: uam_10
+    restart: always
+    stop_grace_period: 5s
+    cap_add:
+      - NET_ADMIN
+    ulimits:
+      rtprio: 95
+      memlock: -1
+    oom_score_adj: -700
+    mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=50m
+    volumes:
+      - "./entrypoint.sh:/opt/entrypoint.sh"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
+    ports:
+      - "127.0.0.1:17110:17099"
+      - "41610:41610"
+    environment:
+      - PBKEY=$${PBKEY}
+      - PPORT=41610
       - NETLIMUP=10000
       - NETLIMDOWN=18000
