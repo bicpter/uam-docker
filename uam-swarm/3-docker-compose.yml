@@ -20,7 +20,7 @@ services:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17099:17099"
+      - "127.0.0.1:17100:17099"
       - "4160:4160"
     environment:
       - PBKEY=${PBKEY}
@@ -47,7 +47,7 @@ services:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17100:17099"
+      - "127.0.0.1:17101:17099"
       - "4161:4161"
     environment:
       - PBKEY=${PBKEY}
@@ -74,7 +74,7 @@ services:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
-      - "127.0.0.1:17101:17099"
+      - "127.0.0.1:17102:17099"
       - "4162:4162"
     environment:
       - PBKEY=${PBKEY}
